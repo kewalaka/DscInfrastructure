@@ -1,0 +1,10 @@
+LcmConfig:
+  Settings:
+    RefreshMode: Push
+    RefreshFrequencyMins: 240
+    RebootNodeIfNeeded: false
+    ActionAfterReboot: ContinueConfiguration
+    AllowModuleOverwrite: true
+    #CertificateID: ...
+    ConfigurationMode: ApplyAndMonitor
+    ConfigurationModeFrequencyMins: 1440

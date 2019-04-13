@@ -1,0 +1,13 @@
+NodeName: labsql01
+Environment: Dev
+Role: SQL2016
+Description: 'SQL 2016 Server in Dev'
+Location: NewPlymouth
+
+NetworkIpConfiguration:
+  IpAddress: 192.168.0.163
+  Prefix: 24
+  Gateway: 192.168.0.1
+  DnsServer: 192.168.0.114
+  InterfaceAlias: Ethernet
+  DisableNetbios: True

@@ -1,0 +1,37 @@
+ResolutionPrecedence:
+  - AllNodes\$($Node.Environment)\$($Node.NodeName)
+  - Roles\$($Node.Role)
+  - Roles\Baseline
+  - SiteData\$($Node.Location)
+  - SiteData\$($Node.Location)\Roles
+  - Environment\$($Node.Environment)
+  - MetaConfig\LCM
+  - MetaConfig\DscTagging
+
+default_lookup_options: MostSpecific
+
+lookup_options:
+  Configurations:
+    merge_basetype_array: Unique
+
+  Baseline:
+    merge_hash: deep
+
+  DscTagging:
+    merge_hash: deep
+
+  WindowsFeatures:
+    merge_hash: deep
+
+  WindowsFeatures\Name:
+    merge_basetype_array: Unique
+
+  LcmConfig:
+    merge_hash: hash
+  LcmConfig\Settings:
+    merge_hash: deep
+  LcmConfig\ReportServerWeb: deep
+  LcmConfig\ConfigurationRepositoryWeb:
+    merge_hash: deep
+  LcmConfig\ConfigurationRepositoryWeb\Server:
+    merge_hash: deep

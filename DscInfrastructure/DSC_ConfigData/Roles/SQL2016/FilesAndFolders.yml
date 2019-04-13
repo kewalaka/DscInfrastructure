@@ -1,0 +1,9 @@
+Items:
+  - DestinationPath: C:\SQL\Data
+    Type: Directory
+  - DestinationPath: C:\SQL\Logs
+    Type: Directory
+  - DestinationPath: C:\SQL\TempDB
+    Type: Directory      
+  - DestinationPath: C:\SQL\Backups
+    Type: Directory      
